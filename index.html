@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIXORA — Mobile Phone Repair & Accessories Shop | Smart Repairs. Better Connections.</title>
+  <meta name="description"
+    content="Professional mobile phone repair services and everyday smartphone accessories. Screen replacement, battery replacement, charging port repair, camera repair, diagnostics, cases, protectors, and chargers." />
+  <meta name="keywords"
+    content="mobile phone repair, smartphone screen replacement, phone battery replacement, charging port repair, mobile camera repair, phone speaker repair, smartphone diagnostics, mobile phone accessories" />
+  <link rel="canonical" href="https://fixora-repair-example.com/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title"
+    content="FIXORA — Mobile Phone Repair & Accessories Shop | Smart Repairs. Better Connections." />
+  <meta property="og:description"
+    content="Professional mobile phone repair services and everyday smartphone accessories. Screen replacement, battery replacement, charging port repair, camera repair, diagnostics, cases, protectors, and chargers." />
+  <meta property="og:image" content="https://fixora-repair-example.com/assets/images/hero/hero-smartphone-repair.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/fixora-logo.svg" />
+  <!-- Prevent Theme & Direction Flash -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('fixora-theme');
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+        var savedDir = localStorage.getItem('fixora-dir');
+        if (savedDir === 'rtl' || savedDir === 'ltr') {
+          document.documentElement.dir = savedDir;
+          document.documentElement.lang = 'en';
+        }
+      } catch (e) { }
+    })();
+  </script>
+  <!-- Google Fonts: Sora, Inter, Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['selector', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Sora', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Space Mono', 'monospace']
+          },
+          colors: {
+            graphite: '#202833',
+            deepGraphite: '#151C24',
+            cyanAccent: '#20B8C4',
+            softSilver: '#AAB6C2',
+            iceWhite: '#F4F7FA',
+            slateBlue: '#354454'
+          }
+        }
+      }
+    };
+  </script>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobilePhoneStore",
+    "name": "FIXORA",
+    "slogan": "Smart Repairs. Better Connections.",
+    "description": "Professional mobile phone repair services and everyday smartphone accessories. Screen replacement, battery replacement, charging port repair, camera repair, diagnostics, cases, protectors, and chargers.",
+    "url": "https://fixora-repair-example.com/index.html",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Configure Shop Street Address]",
+      "addressLocality": "[Configure City]",
+      "addressRegion": "[Configure Region]",
+      "postalCode": "[Configure Postal Code]",
+      "addressCountry": "[Configure Country]"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-theme-bg text-theme-primary">
+
+  <!-- SITE HEADER & NAVBAR -->
+  <header class="site-header" role="banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-3">
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0 text-theme-primary focus:outline-none"
+          aria-label="FIXORA Home">
+          <div
+            class="w-10 h-10 rounded-xl bg-[#202833] border border-[#20B8C4] flex items-center justify-center shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 44 44" fill="none"><path d="M22 6L36 14V30L22 38L8 30V14L22 6Z" fill="#151C24" stroke="#20B8C4" stroke-width="2.4" stroke-linejoin="round"/><path d="M16 16H28M16 22H23M16 16V29" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 22.5L23 27.5H27L24.5 32" stroke="#20B8C4" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-xl tracking-wider leading-none text-theme-primary">FIXORA<span
+                class="text-[#20B8C4]">.</span></span>
+            <span class="font-mono-tech text-[10px] text-theme-muted tracking-widest uppercase mt-0.5">Mobile
+              Care</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center gap-1" aria-label="Primary Navigation">
+          <!-- Home Dropdown -->
+          <div class="nav-dropdown">
+            <button type="button" data-dropdown-btn class="nav-link" aria-haspopup="true">
+              <span>Home</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-75" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <span class="w-2 h-2 rounded-full bg-[#20B8C4]"></span>
+                <span>Home 1 — Main Repair Hub</span>
+              </a>
+              <a href="pages/home-2.html" class="dropdown-item" role="menuitem">
+                <span class="w-2 h-2 rounded-full bg-[#354454]"></span>
+                <span>Home 2 — Graphite Workbench</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="pages/about.html" class="nav-link">About</a>
+
+          <!-- Services Dropdown -->
+          <div class="nav-dropdown">
+            <button type="button" data-dropdown-btn class="nav-link" aria-haspopup="true">
+              <span>Services</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-75" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu !min-w-[17.5rem]" role="menu">
+              <a href="pages/services.html" class="dropdown-item font-semibold border-b border-theme mb-1"
+                role="menuitem">
+                <span>All Services Overview</span>
+              </a>
+              <a href="pages/screen-repair.html" class="dropdown-item" role="menuitem">Screen Repair</a>
+              <a href="pages/battery-replacement.html" class="dropdown-item" role="menuitem">Battery Replacement</a>
+              <a href="pages/charging-port-repair.html" class="dropdown-item" role="menuitem">Charging Port Repair</a>
+              <a href="pages/camera-repair.html" class="dropdown-item" role="menuitem">Camera Repair</a>
+              <a href="pages/speaker-microphone-repair.html" class="dropdown-item" role="menuitem">Speaker and
+                Microphone Repair</a>
+              <a href="pages/software-troubleshooting.html" class="dropdown-item" role="menuitem">Software
+                Troubleshooting</a>
+              <a href="pages/water-damage-inspection.html" class="dropdown-item" role="menuitem">Water Damage
+                Inspection</a>
+              <a href="pages/diagnostics.html" class="dropdown-item" role="menuitem">Diagnostics</a>
+            </div>
+          </div>
+
+          <a href="pages/accessories.html" class="nav-link">Accessories</a>
+          <a href="pages/pricing-guide.html" class="nav-link">Pricing Guide</a>
+          <a href="pages/repair-process.html" class="nav-link">Repair Process</a>
+          <a href="pages/contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right Controls: RTL/LTR, Theme Toggle, Book CTA, Mobile Hamburger -->
+        <div class="flex items-center gap-2 shrink-0">
+          <!-- Direction Toggle (LTR / RTL - English content only) -->
+          <button type="button" data-dir-toggle
+            class="px-2.5 py-2 rounded-lg border border-theme bg-theme-surface text-theme-primary hover:border-[#20B8C4] font-mono-tech text-xs font-bold transition"
+            aria-label="Toggle layout direction LTR or RTL">
+            <span class="dir-label">LTR</span>
+          </button>
+
+          <!-- Light / Dark Theme Toggle -->
+          <button type="button" data-theme-toggle
+            class="p-2.5 rounded-lg border border-theme bg-theme-surface text-theme-primary hover:border-[#20B8C4] transition"
+            aria-label="Toggle theme">
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg class="theme-icon-sun hidden w-4 h-4 text-[#20B8C4]" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg class="theme-icon-moon w-4 h-4 text-theme-primary" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </button>
+
+          <!-- Book a Repair CTA -->
+          <a href="pages/repair-request.html" class="hidden sm:inline-flex btn-accent !py-2.5 !px-4 !text-sm">
+            <span>Book a Repair</span>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button type="button" data-mobile-toggle
+            class="xl:hidden p-2.5 rounded-lg border border-theme bg-theme-surface text-theme-primary hover:border-[#20B8C4]"
+            aria-label="Open Mobile Menu" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="flex items-center justify-between p-5 border-b border-theme">
+      <a href="index.html" class="flex items-center gap-2 text-theme-primary font-heading font-extrabold text-lg">
+        <span>FIXORA<span class="text-[#20B8C4]">.</span></span>
+      </a>
+      <button type="button" data-mobile-close
+        class="p-2 rounded-lg border border-theme text-theme-secondary hover:text-theme-primary"
+        aria-label="Close Mobile Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="p-5 flex-1 space-y-2">
+      <!-- Home Submenu -->
+      <div>
+        <button type="button" data-mobile-submenu-toggle="mob-home-sub"
+          class="w-full flex items-center justify-between py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted"
+          aria-expanded="false">
+          <span>Home</span>
+          <svg class="submenu-chevron w-4 h-4 transition-transform" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+        <div id="mob-home-sub" class="hidden ps-4 mt-1 space-y-1 border-s-2 border-theme ms-3">
+          <a href="index.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Home 1 — Main
+            Hub</a>
+          <a href="pages/home-2.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Home 2 — Graphite
+            Hero</a>
+        </div>
+      </div>
+
+      <a href="pages/about.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">About</a>
+
+      <!-- Services Submenu -->
+      <div>
+        <button type="button" data-mobile-submenu-toggle="mob-services-sub"
+          class="w-full flex items-center justify-between py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted"
+          aria-expanded="false">
+          <span>Services</span>
+          <svg class="submenu-chevron w-4 h-4 transition-transform" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+        <div id="mob-services-sub" class="hidden ps-4 mt-1 space-y-1 border-s-2 border-theme ms-3">
+          <a href="pages/services.html" class="block py-2 px-3 rounded-lg text-sm font-semibold text-theme-accent">All
+            Services</a>
+          <a href="pages/screen-repair.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Screen Repair</a>
+          <a href="pages/battery-replacement.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Battery
+            Replacement</a>
+          <a href="pages/charging-port-repair.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Charging Port
+            Repair</a>
+          <a href="pages/camera-repair.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Camera Repair</a>
+          <a href="pages/speaker-microphone-repair.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Speaker &amp;
+            Microphone Repair</a>
+          <a href="pages/software-troubleshooting.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Software
+            Troubleshooting</a>
+          <a href="pages/water-damage-inspection.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Water Damage
+            Inspection</a>
+          <a href="pages/diagnostics.html"
+            class="block py-2 px-3 rounded-lg text-sm text-theme-secondary hover:text-theme-accent">Diagnostics</a>
+        </div>
+      </div>
+
+      <a href="pages/accessories.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Accessories</a>
+      <a href="pages/accessories-categories.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Accessory
+        Categories</a>
+      <a href="pages/pricing-guide.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Pricing
+        Guide</a>
+      <a href="pages/repair-process.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Repair
+        Process</a>
+      <a href="pages/brands-supported.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Brands
+        Supported</a>
+      <a href="pages/gallery.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Workshop
+        Gallery</a>
+      <a href="pages/blog.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Tech
+        Blog</a>
+      <a href="pages/faq.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">FAQ</a>
+      <a href="pages/contact.html"
+        class="block py-2.5 px-3 rounded-lg font-heading font-semibold text-sm text-theme-primary hover:bg-theme-muted">Contact</a>
+    </div>
+
+    <div class="p-5 border-t border-theme space-y-3">
+      <a href="pages/repair-request.html" class="btn-accent w-full">Book a Repair</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- 1. HERO SECTION -->
+
+    <style>
+      @keyframes phoneFloat {
+
+        0%,
+        100% {
+          transform: translate(-50%, -50%) translateY(0) rotate(-6deg);
+        }
+
+        50% {
+          transform: translate(-50%, -50%) translateY(-18px) rotate(-3deg);
+        }
+      }
+
+      @keyframes accessoryFloat {
+
+        0%,
+        100% {
+          transform: translateY(0) rotate(4deg);
+        }
+
+        50% {
+          transform: translateY(-14px) rotate(-2deg);
+        }
+      }
+
+      @keyframes slowSpin {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      @keyframes glowPulse {
+
+        0%,
+        100% {
+          opacity: .3;
+          transform: scale(.95);
+        }
+
+        50% {
+          opacity: .65;
+          transform: scale(1.08);
+        }
+      }
+
+      .floating-phone {
+        animation: phoneFloat 6s ease-in-out infinite;
+        filter: drop-shadow(0 35px 45px rgba(0, 0, 0, .55));
+      }
+
+      .floating-accessory {
+        animation: accessoryFloat 5s ease-in-out infinite;
+        filter: drop-shadow(0 20px 25px rgba(0, 0, 0, .5));
+      }
+
+      .hero-glow {
+        animation: glowPulse 5s ease-in-out infinite;
+      }
+
+      .orbit-ring {
+        animation: slowSpin 35s linear infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+
+        .floating-phone,
+        .floating-accessory,
+        .hero-glow,
+        .orbit-ring {
+          animation: none !important;
+        }
+      }
+    </style>
+
+    <section class="relative min-h-[850px] overflow-hidden bg-[#0B1118] text-white">
+
+      <!-- Background lighting -->
+      <div class="absolute inset-0 pointer-events-none">
+        <div
+          class="hero-glow absolute w-[600px] h-[600px] rounded-full bg-[#20B8C4]/15 blur-[140px] top-[20%] left-1/2 -translate-x-1/2">
+        </div>
+        <div class="absolute inset-0 opacity-[0.035]"
+          style="background-image:radial-gradient(#ffffff 1px,transparent 1px);background-size:30px 30px">
+        </div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-14">
+
+        <!-- Brand label -->
+        <div class="flex justify-center">
+          <div
+            class="flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 backdrop-blur-xl">
+            <span class="w-2 h-2 rounded-full bg-[#20B8C4]"></span>
+            <span class="text-[11px] font-mono uppercase tracking-[.22em] text-white/70">
+              FIXORA — Mobile Care & Accessories
+            </span>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="relative z-10 text-center mt-12">
+          <p class="text-[#20B8C4] text-xs sm:text-sm font-bold uppercase tracking-[.3em] mb-5">
+            Precision meets technology
+          </p>
+
+          <h1 class="text-5xl sm:text-7xl lg:text-[90px] font-extrabold tracking-[-.065em] leading-[.98]">
+            Give Your Phone
+            <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#20B8C4] via-white to-[#20B8C4]">
+              A Better Life.
+            </span>
+          </h1>
+
+          <p class="max-w-xl mx-auto mt-6 text-sm sm:text-base leading-relaxed text-white/55">
+            Expert smartphone repairs and carefully selected accessories.
+            Everything your device needs, in one place.
+          </p>
+
+          <div class="flex justify-center flex-wrap gap-4 mt-7">
+            <a href="pages/repair-request.html"
+              class="px-7 py-3.5 rounded-full bg-[#20B8C4] text-[#071217] font-bold hover:bg-white transition-all duration-300">
+              Book a Repair &rarr;
+            </a>
+
+            <a href="pages/services.html"
+              class="px-7 py-3.5 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all duration-300">
+              Explore Services
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating 3D product composition -->
+        <div class="relative max-w-4xl mx-auto h-[430px] sm:h-[510px] mt-4">
+
+          <!-- Circular lighting -->
+          <div
+            class="absolute w-[300px] h-[300px] sm:w-[440px] sm:h-[440px] rounded-full border border-[#20B8C4]/20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          </div>
+
+          <div
+            class="orbit-ring absolute w-[350px] h-[350px] sm:w-[520px] sm:h-[520px] rounded-full border border-dashed border-white/10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          </div>
+
+          <div
+            class="absolute w-[230px] h-[230px] sm:w-[350px] sm:h-[350px] rounded-full bg-[#20B8C4]/20 blur-[90px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          </div>
+
+          <!-- Main floating smartphone PNG -->
+          <img src="assets/images/hero/floating-smartphone.png"
+            alt="Premium smartphone floating in a 3D product composition"
+            class="floating-phone absolute z-20 w-[195px] sm:w-[270px] lg:w-[305px] left-1/2 top-1/2 object-contain pointer-events-none select-none">
+
+          <!-- Floating screen component -->
+          <img src="assets/images/hero/floating-screen.png" alt="Smartphone replacement screen component"
+            class="floating-accessory absolute z-30 w-[110px] sm:w-[155px] left-[4%] sm:left-[9%] top-[10%] object-contain pointer-events-none select-none">
+
+          <!-- Floating earbuds -->
+          <img src="assets/images/hero/floating-earbuds.png" alt="Wireless earbuds accessory"
+            class="floating-accessory absolute z-30 w-[105px] sm:w-[145px] right-[4%] sm:right-[9%] top-[8%] object-contain pointer-events-none select-none"
+            style="animation-delay:-2s">
+
+          <!-- Charging accessory -->
+          <img src="assets/images/hero/floating-charger.png" alt="Premium smartphone charger accessory"
+            class="floating-accessory absolute z-30 w-[100px] sm:w-[140px] right-[6%] sm:right-[13%] bottom-[4%] object-contain pointer-events-none select-none"
+            style="animation-delay:-3s">
+
+          <!-- Repair badge -->
+          <div
+            class="absolute z-40 left-2 sm:left-[4%] bottom-[12%] p-3 sm:p-4 rounded-2xl border border-white/15 bg-[#17232C]/85 backdrop-blur-xl shadow-xl">
+            <p class="text-[9px] uppercase tracking-widest text-[#20B8C4] font-mono">01 / Repair</p>
+            <p class="text-xs sm:text-sm font-bold mt-1">Screen &amp; Battery</p>
+          </div>
+
+          <!-- Accessories badge -->
+          <div
+            class="absolute z-40 right-2 sm:right-[3%] bottom-[38%] p-3 sm:p-4 rounded-2xl border border-white/15 bg-[#17232C]/85 backdrop-blur-xl shadow-xl">
+            <p class="text-[9px] uppercase tracking-widest text-[#20B8C4] font-mono">02 / Essentials</p>
+            <p class="text-xs sm:text-sm font-bold mt-1">Premium Accessories</p>
+          </div>
+
+        </div>
+
+        <!-- Bottom strip -->
+        <div class="relative border-t border-white/10 py-7 grid grid-cols-1 sm:grid-cols-3 gap-5 text-center">
+
+          <div>
+            <p class="text-sm font-bold">Precision Diagnostics</p>
+            <p class="text-xs text-white/40 mt-1">Inspect before repair</p>
+          </div>
+
+          <div>
+            <p class="text-sm font-bold">Transparent Estimates</p>
+            <p class="text-xs text-white/40 mt-1">Clear repair guidance</p>
+          </div>
+
+          <div>
+            <p class="text-sm font-bold">Mobile Essentials</p>
+            <p class="text-xs text-white/40 mt-1">Accessories for everyday use</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. QUICK REPAIR SERVICES -->
+    <section class="py-16 lg:py-20 bg-theme-bg reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="tech-badge mb-3">Quick Repair Solutions</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Phone Trouble? Let's Get It
+              Fixed.</h2>
+          </div>
+          <a href="pages/repair-request.html" class="btn-accent self-start md:self-auto">Book a Repair</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1: Cracked Screen -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/screen-repair/cracked-phone-screen.jpg"
+                alt="Cracked smartphone screen glass inspection" loading="lazy" />
+            </div>
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-xl font-bold text-theme-primary mb-2">Cracked Screen</h3>
+              <p class="text-sm text-theme-secondary mb-4">Shattered front glass, unresponsive touch areas, dead pixels,
+                or flickering display panels evaluated for your device model.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/screen-repair.html"
+                  class="text-sm font-heading font-semibold text-theme-accent hover:underline">View Repair &rarr;</a>
+                <a href="pages/repair-request.html?service=screen-repair"
+                  class="btn-outline !py-1.5 !px-3 !text-xs">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Weak Battery -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/battery-repair/mobile-battery-replacement.jpg"
+                alt="Smartphone battery component replacement" loading="lazy" />
+            </div>
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-xl font-bold text-theme-primary mb-2">Weak Battery</h3>
+              <p class="text-sm text-theme-secondary mb-4">Rapid battery drain, unexpected power-offs at 20% charge, or
+                battery health degradation checked and safely replaced.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/battery-replacement.html"
+                  class="text-sm font-heading font-semibold text-theme-accent hover:underline">View Repair &rarr;</a>
+                <a href="pages/repair-request.html?service=battery-replacement"
+                  class="btn-outline !py-1.5 !px-3 !text-xs">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Charging Issues -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/charging-port/usb-c-port-inspection.jpg"
+                alt="Smartphone USB-C charging port inspection" loading="lazy" />
+            </div>
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-xl font-bold text-theme-primary mb-2">Charging Issues</h3>
+              <p class="text-sm text-theme-secondary mb-4">Loose charging cable connection, intermittent power contact,
+                or damaged connector pins inspected and serviced.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/charging-port-repair.html"
+                  class="text-sm font-heading font-semibold text-theme-accent hover:underline">View Repair &rarr;</a>
+                <a href="pages/repair-request.html?service=charging-port-repair"
+                  class="btn-outline !py-1.5 !px-3 !text-xs">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Camera Problems -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/camera-repair/smartphone-camera-repair.jpg"
+                alt="Smartphone rear camera module close-up" loading="lazy" />
+            </div>
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-xl font-bold text-theme-primary mb-2">Camera Problems</h3>
+              <p class="text-sm text-theme-secondary mb-4">Blurry camera focus, optical stabilization shaking, black
+                preview screen, or cracked camera lens cover glass.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/camera-repair.html"
+                  class="text-sm font-heading font-semibold text-theme-accent hover:underline">View Repair &rarr;</a>
+                <a href="pages/repair-request.html?service=camera-repair"
+                  class="btn-outline !py-1.5 !px-3 !text-xs">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Speaker Issues -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/speaker-repair/phone-speaker-repair.jpg"
+                alt="Mobile phone audio circuit and speaker component" loading="lazy" />
+            </div>
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-xl font-bold text-theme-primary mb-2">Speaker Issues</h3>
+              <p class="text-sm text-theme-secondary mb-4">Low earpiece call volume, distorted loudspeaker ringtones, or
+                microphone issues making callers unable to hear you.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/speaker-microphone-repair.html"
+                  class="text-sm font-heading font-semibold text-theme-accent hover:underline">View Repair &rarr;</a>
+                <a href="pages/repair-request.html?service=speaker-microphone-repair"
+                  class="btn-outline !py-1.5 !px-3 !text-xs">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Software Problems -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/smartphones/software-troubleshooting-phone.jpg"
+                alt="Smartphone system architecture and software troubleshooting" loading="lazy" />
+            </div>
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-xl font-bold text-theme-primary mb-2">Software Problems</h3>
+              <p class="text-sm text-theme-secondary mb-4">Frozen startup screens, failed operating system updates,
+                sluggish performance, or recurring application crashes.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/software-troubleshooting.html"
+                  class="text-sm font-heading font-semibold text-theme-accent hover:underline">View Repair &rarr;</a>
+                <a href="pages/repair-request.html?service=software-troubleshooting"
+                  class="btn-outline !py-1.5 !px-3 !text-xs">Enquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMMON PHONE PROBLEMS -->
+    <section class="py-16 lg:py-20 bg-theme-surface border-y border-theme reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <span class="tech-badge mb-3">Symptom Guide</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary mb-4">Common Signs Your Device
+            Needs Inspection</h2>
+          <p class="text-theme-secondary text-base">
+            Smartphone symptoms can often have multiple underlying causes—for example, a phone that will not charge
+            might have a compacted port, a worn cable, a degraded battery, or a board-level fault. Proper diagnostic
+            inspection identifies the real issue before you decide on a repair.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">01 / Display</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Cracked or Unresponsive Display</h3>
+              <p class="text-sm text-theme-secondary m-0">Surface glass fractures, touch dead zones, ghost touches, or
+                dim backlight output requiring screen assembly inspection.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">02 / Power</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Rapid Battery Drain</h3>
+              <p class="text-sm text-theme-secondary m-0">Noticeably shorter battery runtime between charges or battery
+                percentage dropping in sudden steps under load.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">03 / Connector</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Phone Not Charging</h3>
+              <p class="text-sm text-theme-secondary m-0">Intermittent charging connection, loose cable seat, or failure
+                to negotiate standard or fast charging current.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">04 / Thermal</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Overheating</h3>
+              <p class="text-sm text-theme-secondary m-0">Unusual warmth during basic browsing or charging, which may
+                relate to background software loops, battery wear, or moisture.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">05 / Optics</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Blurry Camera</h3>
+              <p class="text-sm text-theme-secondary m-0">Inability to lock autofocus, vibrating camera preview, dust
+                behind cracked lens glass, or blank camera interface.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">06 / Acoustics</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">No Sound From Speaker</h3>
+              <p class="text-sm text-theme-secondary m-0">Faint earpiece audio during calls or silent/crackling media
+                playback from the bottom loudspeaker assembly.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">07 / Voice Input</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Microphone Problems</h3>
+              <p class="text-sm text-theme-secondary m-0">Muffled voice transmission on phone calls, silent voice notes,
+                or static noise picked up by the microphone array.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">08 / Stability</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Unexpected Shutdown</h3>
+              <p class="text-sm text-theme-secondary m-0">Device turning off abruptly while still showing remaining
+                battery charge, especially when launching camera or apps.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body !p-5">
+              <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase mb-1">09 / System</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1.5">Software Errors</h3>
+              <p class="text-sm text-theme-secondary m-0">Boot loops, stalled OS updates, full storage sluggishness, or
+                system app crashes requiring software assessment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OUR CORE REPAIR SERVICES (8 Cards) -->
+    <section class="py-16 lg:py-20 bg-theme-bg reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="tech-badge mb-3">Specialist Mobile Care</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Our Core Repair Services
+            </h2>
+          </div>
+          <a href="pages/services.html" class="btn-outline self-start md:self-auto">View All 10 Services &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 1 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/screen-repair/smartphone-display-replacement.jpg"
+                alt="Screen repair and display assembly replacement" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Screen Repair &amp; Replacement</h3>
+              <p class="text-xs text-theme-secondary mb-4">Display inspection, touch response check, and screen
+                replacement enquiry for cracked or dark displays.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/screen-repair.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=screen-repair" class="btn-accent !py-1.5 !px-3 !text-xs">Book
+                  Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 2 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/battery-repair/smartphone-battery-inspection.jpg"
+                alt="Smartphone battery inspection and replacement" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Battery Replacement</h3>
+              <p class="text-xs text-theme-secondary mb-4">Battery health assessment and safe replacement for degraded
+                cells, fast drain, or sudden power drops.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/battery-replacement.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=battery-replacement"
+                  class="btn-accent !py-1.5 !px-3 !text-xs">Book Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 3 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/charging-port/charging-connector-closeup.jpg"
+                alt="USB Type-C charging port repair close-up" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Charging Port Repair</h3>
+              <p class="text-xs text-theme-secondary mb-4">Microscopic port inspection, safe debris removal, and
+                connector or sub-board repair assessment.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/charging-port-repair.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=charging-port-repair"
+                  class="btn-accent !py-1.5 !px-3 !text-xs">Book Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 4 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/camera-repair/camera-module-inspection.jpg"
+                alt="Smartphone multi-lens camera module inspection" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Camera Repair</h3>
+              <p class="text-xs text-theme-secondary mb-4">Front and rear camera module inspection, focus issue
+                evaluation, and exterior lens glass replacement.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/camera-repair.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=camera-repair" class="btn-accent !py-1.5 !px-3 !text-xs">Book
+                  Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 5 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/speaker-repair/audio-component-inspection.jpg"
+                alt="Smartphone disassembly for speaker and microphone repair" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Speaker &amp; Microphone Repair</h3>
+              <p class="text-xs text-theme-secondary mb-4">Acoustic mesh inspection, earpiece receiver checks,
+                loudspeaker testing, and microphone channel diagnosis.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/speaker-microphone-repair.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=speaker-microphone-repair"
+                  class="btn-accent !py-1.5 !px-3 !text-xs">Book Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 6 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/smartphones/software-troubleshooting-phone.jpg"
+                alt="Smartphone software troubleshooting and system check" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Software Troubleshooting</h3>
+              <p class="text-xs text-theme-secondary mb-4">OS update issues, boot loops, app crashes, and storage
+                performance diagnostics with data backup advice.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/software-troubleshooting.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=software-troubleshooting"
+                  class="btn-accent !py-1.5 !px-3 !text-xs">Book Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 7 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/diagnostics/water-damage-board-inspection.jpg"
+                alt="Smartphone motherboard water damage corrosion inspection" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">Water Damage Inspection</h3>
+              <p class="text-xs text-theme-secondary mb-4">Internal moisture disconnection, corrosion evaluation, board
+                cleaning assessment, and honest repair feasibility.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/water-damage-inspection.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=water-damage-inspection"
+                  class="btn-accent !py-1.5 !px-3 !text-xs">Book Repair</a>
+              </div>
+            </div>
+          </article>
+          <!-- 8 -->
+          <article class="fixora-card">
+            <div class="aspect-service">
+              <img src="assets/images/diagnostics/mobile-diagnostics-workbench.jpg"
+                alt="Electronics repair workbench for general phone diagnostics" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-2">General Phone Diagnostics</h3>
+              <p class="text-xs text-theme-secondary mb-4">Comprehensive multi-point inspection when your smartphone has
+                multiple symptoms or an unknown power fault.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between gap-2">
+                <a href="pages/diagnostics.html"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Learn More</a>
+                <a href="pages/repair-request.html?service=diagnostics" class="btn-accent !py-1.5 !px-3 !text-xs">Book
+                  Repair</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HOW OUR REPAIR PROCESS WORKS -->
+    <section class="py-16 lg:py-20 bg-[#202833] text-white reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span
+              class="inline-block font-mono-tech text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#20B8C4]/20 text-[#20B8C4] mb-3">4-Step
+              Workflow</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">How Our Repair Process Works</h2>
+            <p class="text-sm text-[#BAC6CF] mt-2 max-w-2xl">All repair work and final pricing depend on physical device
+              inspection and your explicit approval before work proceeds.</p>
+          </div>
+          <a href="pages/repair-process.html" class="btn-accent self-start md:self-auto">Full Process Details &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-[#151C24] border border-[#354652] rounded-2xl p-6 flex flex-col">
+            <span class="font-mono-tech text-2xl font-bold text-[#20B8C4] mb-3">01</span>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Tell Us About Your Phone</h3>
+            <p class="text-sm text-[#BAC6CF] m-0">Select your smartphone brand and exact model so we can check component
+              compatibility and availability.</p>
+          </div>
+          <div class="bg-[#151C24] border border-[#354652] rounded-2xl p-6 flex flex-col">
+            <span class="font-mono-tech text-2xl font-bold text-[#20B8C4] mb-3">02</span>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Describe the Problem</h3>
+            <p class="text-sm text-[#BAC6CF] m-0">Let us know the symptoms you are seeing—whether a cracked display,
+              battery drain, charging issue, or audio fault.</p>
+          </div>
+          <div class="bg-[#151C24] border border-[#354652] rounded-2xl p-6 flex flex-col">
+            <span class="font-mono-tech text-2xl font-bold text-[#20B8C4] mb-3">03</span>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Request a Repair Appointment</h3>
+            <p class="text-sm text-[#BAC6CF] m-0">Submit a preferred inspection date and time window via our repair
+              enquiry form for shop review.</p>
+          </div>
+          <div class="bg-[#151C24] border border-[#354652] rounded-2xl p-6 flex flex-col">
+            <span class="font-mono-tech text-2xl font-bold text-[#20B8C4] mb-3">04</span>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Inspection &amp; Repair Estimate</h3>
+            <p class="text-sm text-[#BAC6CF] m-0">Our technicians inspect the device, confirm the root cause, and share
+              a clear estimate for your approval.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ACCESSORIES PREVIEW (8 Categories with Distinct Real Photos) -->
+    <section class="py-16 lg:py-20 bg-theme-bg reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="tech-badge mb-3">Everyday Protection &amp; Power</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Mobile Accessories Preview
+            </h2>
+            <p class="text-theme-secondary text-sm mt-2">Practical covers, screen protectors, chargers, cables, and
+              audio accessories to protect and power your phone.</p>
+          </div>
+          <a href="pages/accessories.html" class="btn-accent self-start md:self-auto">Explore Accessories &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 1. Protective Cases -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/cases-covers/premium-phone-case.jpg" alt="Protective smartphone bumper case"
+                loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Protective Cases</h3>
+              <p class="text-xs text-theme-secondary mb-4">Shock-absorbing bumper cases and slim back covers for daily
+                drop defense.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Phone+Cases+and+Covers"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Cases &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 2. Screen Protectors -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/screen-protectors/tempered-glass-protector.jpg"
+                alt="Tempered glass screen protector films" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Screen Protectors</h3>
+              <p class="text-xs text-theme-secondary mb-4">Clear tempered glass and matte anti-glare protective display
+                films.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Screen+Protectors"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Protectors
+                  &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 3. Fast Chargers -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/chargers-cables/fast-charging-adapter.jpg"
+                alt="Compact 30W USB-C wall power adapters" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Fast Chargers</h3>
+              <p class="text-xs text-theme-secondary mb-4">Regulated USB-C wall adapters for safe everyday phone
+                charging.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Chargers+and+Adapters"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Chargers
+                  &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 4. USB Cables -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/chargers-cables/braided-usb-c-cables.jpg"
+                alt="Braided USB charging and data sync cables" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">USB Cables</h3>
+              <p class="text-xs text-theme-secondary mb-4">Nylon-braided and flexible USB-C charging and data sync
+                cords.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=USB+and+Charging+Cables"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Cables &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 5. Wireless Earbuds -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/audio-accessories/wireless-earbuds.jpg"
+                alt="True wireless stereo earbuds with charging case" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Wireless Earbuds</h3>
+              <p class="text-xs text-theme-secondary mb-4">Bluetooth in-ear stereo earbuds with portable charging cases.
+              </p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Wireless+Earbuds"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Earbuds &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 6. Power Banks -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/accessories/portable-power-bank.jpg" alt="Portable USB-C power bank battery pack"
+                loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Power Banks</h3>
+              <p class="text-xs text-theme-secondary mb-4">Portable battery packs for backup charging during commutes
+                and travel.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Power+Banks"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Power Banks
+                  &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 7. Phone Stands and Holders -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/accessories/desk-phone-stand.jpg"
+                alt="Desktop smartphone viewing stand and car mount" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Phone Stands &amp; Holders</h3>
+              <p class="text-xs text-theme-secondary mb-4">Desktop viewing cradles, car dashboard mounts, and tabletop
+                tripods.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Phone+Stands+and+Holders"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Stands &rarr;</a>
+              </div>
+            </div>
+          </article>
+          <!-- 8. Audio Accessories -->
+          <article class="fixora-card">
+            <div class="aspect-accessory">
+              <img src="assets/images/audio-accessories/wired-earphones.jpg"
+                alt="Wired stereo earphones and audio accessories" loading="lazy" />
+            </div>
+            <div class="fixora-card-body !p-5">
+              <h3 class="font-heading text-lg font-bold text-theme-primary mb-1">Audio Accessories</h3>
+              <p class="text-xs text-theme-secondary mb-4">Plug-and-play wired earphones with inline microphones for
+                clear calls.</p>
+              <div class="fixora-card-footer border-t border-theme flex items-center justify-between">
+                <a href="pages/accessories.html?category=Wired+Earphones"
+                  class="text-xs font-heading font-semibold text-theme-accent hover:underline">Browse Audio &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY CHOOSE FIXORA? -->
+    <section class="py-16 lg:py-20 bg-theme-surface border-y border-theme reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl overflow-hidden border border-theme shadow-theme-card">
+              <img src="assets/images/technicians/technician-phone-repair.jpg"
+                alt="Technician working on mobile phone hardware at FIXORA" class="w-full h-80 sm:h-96 object-cover"
+                loading="lazy" />
+            </div>
+          </div>
+          <div class="lg:col-span-7 space-y-6">
+            <span class="tech-badge">Our Service Standard</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Why Choose FIXORA?</h2>
+            <p class="text-theme-secondary text-base">
+              We focus on practical, transparent mobile care—helping you understand what is happening with your device
+              before you commit to any repair work.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <h3 class="font-heading font-bold text-base text-theme-primary mb-1">Focused Mobile Repair Services</h3>
+                <p class="text-xs text-theme-secondary m-0">Dedicated to smartphone screens, batteries, charging ports,
+                  cameras, audio, and diagnostics.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <h3 class="font-heading font-bold text-base text-theme-primary mb-1">Clear Repair Explanations</h3>
+                <p class="text-xs text-theme-secondary m-0">Plain-English explanation of inspection findings without
+                  confusing technical jargon.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <h3 class="font-heading font-bold text-base text-theme-primary mb-1">Professional Diagnostic Approach
+                </h3>
+                <p class="text-xs text-theme-secondary m-0">Root-cause verification so you do not replace parts
+                  unnecessarily.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <h3 class="font-heading font-bold text-base text-theme-primary mb-1">Transparent Price Guidance</h3>
+                <p class="text-xs text-theme-secondary m-0">Indicative price guidance upfront and a confirmed estimate
+                  prior to starting work.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <h3 class="font-heading font-bold text-base text-theme-primary mb-1">Relevant Accessory Selection</h3>
+                <p class="text-xs text-theme-secondary m-0">Curated cases, screen protectors, chargers, cables, earbuds,
+                  and mounts.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <h3 class="font-heading font-bold text-base text-theme-primary mb-1">Convenient Repair Enquiry</h3>
+                <p class="text-xs text-theme-secondary m-0">Submit your device details and preferred inspection window
+                  online anytime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SUPPORTED PHONE BRANDS -->
+    <section class="py-16 lg:py-20 bg-theme-bg reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="tech-badge mb-3">Device Compatibility</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Supported Phone Brands</h2>
+            <p class="text-sm text-theme-secondary mt-2 max-w-2xl">
+              We service a wide range of smartphone models across major manufacturers. Supported models and replacement
+              part availability must be confirmed for your specific device. FIXORA is an independent repair shop and
+              does not claim authorized repair status or official brand partnership.
+            </p>
+          </div>
+          <a href="pages/brands-supported.html" class="btn-outline self-start md:self-auto">Check Compatibility
+            &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-9 gap-4">
+          <a href="pages/repair-request.html?brand=Apple" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Apple</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">iPhone Series</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Samsung" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Samsung</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Galaxy Series</span>
+          </a>
+          <a href="pages/repair-request.html?brand=OnePlus" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">OnePlus</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Nord &amp; Flagship</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Xiaomi" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Xiaomi</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Mi &amp; T Series</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Redmi" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Redmi</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Note Series</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Vivo" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Vivo</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">V &amp; Y Series</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Oppo" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Oppo</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Reno &amp; A Series</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Realme" class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Realme</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Number &amp; GT</span>
+          </a>
+          <a href="pages/repair-request.html?brand=Motorola"
+            class="fixora-card !p-4 text-center hover:border-[#20B8C4]">
+            <span class="font-heading font-bold text-base text-theme-primary block">Motorola</span>
+            <span class="font-mono-tech text-[10px] text-theme-muted">Moto G &amp; Edge</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. REPAIR PRICING PREVIEW -->
+    <section class="py-16 lg:py-20 bg-theme-surface border-y border-theme reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="tech-badge mb-3">Illustrative Price Guidance</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Repair Pricing Preview</h2>
+            <p class="text-sm text-theme-secondary mt-2 max-w-2xl">
+              Displayed prices are indicative examples and may vary based on device model, part availability, repair
+              complexity, and inspection findings. A final estimate will be shared before repair work proceeds.
+            </p>
+          </div>
+          <a href="pages/pricing-guide.html" class="btn-accent self-start md:self-auto">View Pricing Guide &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-muted uppercase">Display Service</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mt-1 mb-2">Screen Replacement</h3>
+              <p class="font-mono-tech text-xl font-bold text-theme-accent mb-3">$49 – $189+ <span
+                  class="text-xs font-normal text-theme-muted">(Illustrative)</span></p>
+              <p class="text-xs text-theme-secondary mb-4">Depends on exact smartphone model, LCD vs. OLED panel
+                assembly, and part availability.</p>
+              <div class="fixora-card-footer border-t border-theme">
+                <a href="pages/repair-request.html?service=screen-repair"
+                  class="btn-outline w-full !py-2 !text-xs">Request Screen Estimate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-muted uppercase">Power Service</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mt-1 mb-2">Battery Replacement</h3>
+              <p class="font-mono-tech text-xl font-bold text-theme-accent mb-3">$35 – $95 <span
+                  class="text-xs font-normal text-theme-muted">(Illustrative)</span></p>
+              <p class="text-xs text-theme-secondary mb-4">Includes battery health check, safe removal of degraded cell,
+                and charging current verification.</p>
+              <div class="fixora-card-footer border-t border-theme">
+                <a href="pages/repair-request.html?service=battery-replacement"
+                  class="btn-outline w-full !py-2 !text-xs">Request Battery Estimate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-muted uppercase">Port Service</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mt-1 mb-2">Charging Port Repair</h3>
+              <p class="font-mono-tech text-xl font-bold text-theme-accent mb-3">$29 – $85 <span
+                  class="text-xs font-normal text-theme-muted">(Illustrative)</span></p>
+              <p class="text-xs text-theme-secondary mb-4">Covers microscopic port inspection, contact cleaning, or
+                charging sub-board assembly replacement.</p>
+              <div class="fixora-card-footer border-t border-theme">
+                <a href="pages/repair-request.html?service=charging-port-repair"
+                  class="btn-outline w-full !py-2 !text-xs">Request Port Estimate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-muted uppercase">Inspection Service</span>
+              <h3 class="font-heading text-lg font-bold text-theme-primary mt-1 mb-2">General Diagnostics</h3>
+              <p class="font-mono-tech text-xl font-bold text-theme-accent mb-3">$20 – $35 <span
+                  class="text-xs font-normal text-theme-muted">(Illustrative)</span></p>
+              <p class="text-xs text-theme-secondary mb-4">Multi-point hardware and software assessment when the root
+                cause of a fault is unclear.</p>
+              <div class="fixora-card-footer border-t border-theme">
+                <a href="pages/repair-request.html?service=diagnostics" class="btn-outline w-full !py-2 !text-xs">Book
+                  Diagnostic Check</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. WORKSHOP AND TECHNICIAN GALLERY PREVIEW -->
+    <section class="py-16 lg:py-20 bg-theme-bg reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="tech-badge mb-3">Inside Our Bench</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Workshop &amp; Technician
+              Gallery</h2>
+          </div>
+          <a href="pages/gallery.html" class="btn-outline self-start md:self-auto">Open Full Lightbox Gallery &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <a href="pages/gallery.html" class="fixora-card group">
+            <div class="aspect-service">
+              <img src="assets/images/workshop/precision-repair-bench.jpg"
+                alt="Precision electronics and smartphone repair workbench" loading="lazy" />
+            </div>
+            <div class="p-4">
+              <span class="font-mono-tech text-[11px] text-theme-accent uppercase">Workshop</span>
+              <h3 class="font-heading text-sm font-bold text-theme-primary">Precision Diagnostic Workbench</h3>
+            </div>
+          </a>
+          <a href="pages/gallery.html" class="fixora-card group">
+            <div class="aspect-service">
+              <img src="assets/images/technicians/technician-soldering-station.jpg"
+                alt="Technician performing circuit board inspection" loading="lazy" />
+            </div>
+            <div class="p-4">
+              <span class="font-mono-tech text-[11px] text-theme-accent uppercase">Technician Work</span>
+              <h3 class="font-heading text-sm font-bold text-theme-primary">Board-Level Circuit Inspection</h3>
+            </div>
+          </a>
+          <a href="pages/gallery.html" class="fixora-card group">
+            <div class="aspect-service">
+              <img src="assets/images/gallery/gallery-screen-disassembly.jpg" alt="Smartphone display disassembly step"
+                loading="lazy" />
+            </div>
+            <div class="p-4">
+              <span class="font-mono-tech text-[11px] text-theme-accent uppercase">Screen Repair</span>
+              <h3 class="font-heading text-sm font-bold text-theme-primary">Display Panel Disassembly</h3>
+            </div>
+          </a>
+          <a href="pages/gallery.html" class="fixora-card group">
+            <div class="aspect-service">
+              <img src="assets/images/workshop/soldering-tools-station.jpg"
+                alt="Precision soldering iron and repair tools" loading="lazy" />
+            </div>
+            <div class="p-4">
+              <span class="font-mono-tech text-[11px] text-theme-accent uppercase">Equipment</span>
+              <h3 class="font-heading text-sm font-bold text-theme-primary">Controlled Soldering &amp; Tooling</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CUSTOMER FEEDBACK PERSPECTIVES (Illustrative Service Scenarios - No Fake Star Counts) -->
+    <section class="py-16 lg:py-20 bg-theme-surface border-y border-theme reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-10">
+          <span class="tech-badge mb-3">What Customers Value</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Clear Communication at Every
+            Step</h2>
+          <p class="text-sm text-theme-secondary mt-2">Representative service feedback highlights illustrating our
+            diagnostic-first workflow (configurable for verified customer quotes).</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-accent uppercase font-bold mb-2">Screen &amp; Protector
+                Care</span>
+              <p class="text-sm text-theme-primary italic mb-4">"Having the technician inspect the frame alignment and
+                confirm display compatibility before quoting gave me complete clarity on my options."</p>
+              <div class="fixora-card-footer border-t border-theme text-xs text-theme-muted">
+                <strong>Display Replacement Enquiry</strong> &bull; Illustrative Service Highlight
+              </div>
+            </div>
+          </article>
+
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-accent uppercase font-bold mb-2">Charging Port
+                Assessment</span>
+              <p class="text-sm text-theme-primary italic mb-4">"I assumed I needed a new battery, but the port
+                inspection showed compacted lint blocking the USB-C pins. Honest diagnostic approach."</p>
+              <div class="fixora-card-footer border-t border-theme text-xs text-theme-muted">
+                <strong>USB-C Port Inspection</strong> &bull; Illustrative Service Highlight
+              </div>
+            </div>
+          </article>
+
+          <article class="fixora-card">
+            <div class="fixora-card-body">
+              <span class="font-mono-tech text-xs text-theme-accent uppercase font-bold mb-2">Accessories &amp;
+                Cables</span>
+              <p class="text-sm text-theme-primary italic mb-4">"Picked up a braided USB-C cable, 30W charger, and
+                tempered glass protector right after my battery service so everything worked together."</p>
+              <div class="fixora-card-footer border-t border-theme text-xs text-theme-muted">
+                <strong>Battery &amp; Accessories Visit</strong> &bull; Illustrative Service Highlight
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FREQUENTLY ASKED QUESTIONS PREVIEW -->
+    <section class="py-16 lg:py-20 bg-theme-bg reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="tech-badge mb-3">Common Questions</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-theme-primary">Frequently Asked Questions
+            </h2>
+          </div>
+          <a href="pages/faq.html" class="btn-outline self-start md:self-auto">View All FAQs &rarr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="fixora-card">
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-base font-bold text-theme-primary mb-2">Does submitting the online repair
+                form confirm an immediate appointment?</h3>
+              <p class="text-sm text-theme-secondary m-0">No. Submitting the form prepares a repair enquiry with your
+                device details and symptoms. Our shop reviews part availability for your model and contacts you to
+                confirm an inspection time and estimate.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-base font-bold text-theme-primary mb-2">How is the final repair price
+                determined?</h3>
+              <p class="text-sm text-theme-secondary m-0">Prices listed on the website are illustrative starting
+                examples. Final pricing depends on your exact phone model, part availability, and physical inspection
+                findings—always shared for your approval before work starts.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-base font-bold text-theme-primary mb-2">Should I back up my phone data before
+                bringing it in?</h3>
+              <p class="text-sm text-theme-secondary m-0">Yes. Whenever your device is functional enough to allow it, we
+                strongly recommend backing up your photos, contacts, and files prior to any hardware or software
+                inspection.</p>
+            </div>
+          </div>
+          <div class="fixora-card">
+            <div class="fixora-card-body">
+              <h3 class="font-heading text-base font-bold text-theme-primary mb-2">What should I do if my phone was
+                exposed to water?</h3>
+              <p class="text-sm text-theme-secondary m-0">Power off the device immediately if safe to do so, do not plug
+                in a charging cable, and bring it in for a water damage inspection as soon as possible to assess
+                internal corrosion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. REPAIR BOOKING CTA -->
+    <section class="py-16 bg-[#202833] text-white border-y border-[#354652] reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span
+          class="inline-block font-mono-tech text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full bg-[#20B8C4]/20 text-[#20B8C4] mb-4">Ready
+          to Start?</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-4">Tell Us What's Happening With Your
+          Phone</h2>
+        <p class="text-base text-[#BAC6CF] max-w-2xl mx-auto mb-8">
+          Submit a repair enquiry in under two minutes or browse our mobile accessories catalogue for protective cases,
+          screen protectors, and fast chargers.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="pages/repair-request.html" class="btn-accent !px-8 !py-3.5 !text-base">Submit a Repair Request</a>
+          <a href="pages/pricing-guide.html"
+            class="btn-outline !border-[#4B606D] !text-white hover:!border-[#20B8C4] !px-8 !py-3.5 !text-base">Check
+            Pricing Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. CONTACT AND LOCATION PREVIEW -->
+    <section class="py-16 lg:py-20 bg-theme-surface reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="tech-badge">Visit or Enquire</span>
+            <h2 class="font-heading text-3xl font-extrabold text-theme-primary">Contact &amp; Store Location Preview</h2>
+            <p class="text-sm text-theme-secondary">
+              Have a question about parts availability for your smartphone model or looking for a specific charger or protective cover? Reach out to our shop team.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Store Address Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Shop Street Address, Suite, and City Landmark]</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Opening Hours Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Mon–Sat &amp; Sunday Opening Hours]</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Phone Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Primary Support Telephone Number]</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Email Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Service Desk Email Address]</p>
+              </div>
+            </div>
+            <div class="pt-3">
+              <a href="pages/contact.html" class="btn-accent">Go to Contact Page &rarr;</a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="fixora-card">
+              <div class="fixora-card-body !p-5 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase">Store Location Map</span>
+                  <span class="tech-badge">Live Map</span>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-theme h-64 w-full bg-theme-muted">
+                  <iframe
+                    title="FIXORA Store Location Preview Map"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-74.012%2C40.705%2C-73.992%2C40.718&amp;layer=mapnik&amp;marker=40.7115%2C-74.002"
+                    class="w-full h-full border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+                <a href="pages/contact.html#store-map" class="btn-outline w-full !text-xs">View Full Contact &amp; Directions &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. CONTACT AND LOCATION PREVIEW -->
+    <section class="py-16 lg:py-20 bg-theme-surface reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="tech-badge">Visit or Enquire</span>
+            <h2 class="font-heading text-3xl font-extrabold text-theme-primary">Contact &amp; Store Location Preview</h2>
+            <p class="text-sm text-theme-secondary">
+              Have a question about parts availability for your smartphone model or looking for a specific charger or protective cover? Reach out to our shop team.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Store Address Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Shop Street Address, Suite, and City Landmark]</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Opening Hours Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Mon–Sat &amp; Sunday Opening Hours]</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Phone Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Primary Support Telephone Number]</p>
+              </div>
+              <div class="p-4 rounded-xl bg-theme-bg border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase block mb-1">Email Placeholder</span>
+                <p class="text-xs text-theme-secondary m-0">[Configure Service Desk Email Address]</p>
+              </div>
+            </div>
+            <div class="pt-3">
+              <a href="pages/contact.html" class="btn-accent">Go to Contact Page &rarr;</a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="fixora-card">
+              <div class="fixora-card-body !p-5 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="font-mono-tech text-xs text-theme-accent font-bold uppercase">Store Location Map</span>
+                  <span class="tech-badge">Live Map</span>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-theme h-64 w-full bg-theme-muted">
+                  <iframe
+                    title="FIXORA Store Location Preview Map"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-74.012%2C40.705%2C-73.992%2C40.718&amp;layer=mapnik&amp;marker=40.7115%2C-74.002"
+                    class="w-full h-full border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+                <a href="pages/contact.html#store-map" class="btn-outline w-full !text-xs">View Full Contact &amp; Directions &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="bg-[#151C24] text-[#F0F4F7] border-t border-[#354652] mt-auto" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        <!-- Column 1: Brand Intro -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-2.5 text-white">
+            <div class="w-10 h-10 rounded-xl bg-[#202833] border border-[#20B8C4] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 44 44" fill="none"><path d="M22 6L36 14V30L22 38L8 30V14L22 6Z" fill="#151C24" stroke="#20B8C4" stroke-width="2.4" stroke-linejoin="round"/><path d="M16 16H28M16 22H23M16 16V29" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 22.5L23 27.5H27L24.5 32" stroke="#20B8C4" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <span class="font-heading font-extrabold text-2xl tracking-wider text-white">FIXORA<span class="text-[#20B8C4]">.</span></span>
+          </a>
+          <p class="font-mono-tech text-xs text-[#20B8C4] uppercase tracking-wider">Smart Repairs. Better Connections.
+          </p>
+          <p class="text-sm text-[#BAC6CF] leading-relaxed">
+            FIXORA provides structured smartphone diagnostics, screen and battery replacements, charging port repairs,
+            and practical everyday mobile phone accessories.
+          </p>
+          <!-- Social Media Placeholders -->
+          <div class="pt-2">
+            <span class="block font-mono-tech text-[11px] text-[#94A3AE] uppercase mb-2">Social Channels (Configure
+              Links)</span>
+            <div class="flex items-center gap-2.5">
+              <a href="pages/contact.html"
+                class="px-3 py-1.5 rounded-lg bg-[#202833] border border-[#354652] text-xs text-[#BAC6CF] hover:border-[#20B8C4] hover:text-white transition"
+                aria-label="Instagram Placeholder">Instagram</a>
+              <a href="pages/contact.html"
+                class="px-3 py-1.5 rounded-lg bg-[#202833] border border-[#354652] text-xs text-[#BAC6CF] hover:border-[#20B8C4] hover:text-white transition"
+                aria-label="Facebook Placeholder">Facebook</a>
+              <a href="pages/contact.html"
+                class="px-3 py-1.5 rounded-lg bg-[#202833] border border-[#354652] text-xs text-[#BAC6CF] hover:border-[#20B8C4] hover:text-white transition"
+                aria-label="YouTube Placeholder">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h3 class="font-heading font-bold text-sm uppercase tracking-wider text-white">Quick Links</h3>
+          <ul class="space-y-2 text-sm text-[#BAC6CF]">
+            <li><a href="index.html" class="hover:text-[#20B8C4] transition">Home 1</a></li>
+            <li><a href="pages/home-2.html" class="hover:text-[#20B8C4] transition">Home 2</a></li>
+            <li><a href="pages/about.html" class="hover:text-[#20B8C4] transition">About FIXORA</a></li>
+            <li><a href="pages/repair-process.html" class="hover:text-[#20B8C4] transition">Repair Process</a></li>
+            <li><a href="pages/pricing-guide.html" class="hover:text-[#20B8C4] transition">Pricing Guide</a></li>
+            <li><a href="pages/brands-supported.html" class="hover:text-[#20B8C4] transition">Brands Supported</a></li>
+            <li><a href="pages/gallery.html" class="hover:text-[#20B8C4] transition">Workshop Gallery</a></li>
+            <li><a href="pages/blog.html" class="hover:text-[#20B8C4] transition">Mobile Care Blog</a></li>
+            <li><a href="pages/faq.html" class="hover:text-[#20B8C4] transition">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Repair Services -->
+        <div class="lg:col-span-3 space-y-3">
+          <h3 class="font-heading font-bold text-sm uppercase tracking-wider text-white">Repair Services</h3>
+          <ul class="space-y-2 text-sm text-[#BAC6CF]">
+            <li><a href="pages/services.html" class="hover:text-[#20B8C4] transition">All Repair Services</a></li>
+            <li><a href="pages/screen-repair.html" class="hover:text-[#20B8C4] transition">Screen Repair &amp;
+                Replacement</a></li>
+            <li><a href="pages/battery-replacement.html" class="hover:text-[#20B8C4] transition">Battery Replacement</a>
+            </li>
+            <li><a href="pages/charging-port-repair.html" class="hover:text-[#20B8C4] transition">Charging Port
+                Repair</a></li>
+            <li><a href="pages/camera-repair.html" class="hover:text-[#20B8C4] transition">Camera Lens &amp; Module
+                Repair</a></li>
+            <li><a href="pages/speaker-microphone-repair.html" class="hover:text-[#20B8C4] transition">Speaker &amp;
+                Microphone Repair</a></li>
+            <li><a href="pages/software-troubleshooting.html" class="hover:text-[#20B8C4] transition">Software
+                Troubleshooting</a></li>
+            <li><a href="pages/water-damage-inspection.html" class="hover:text-[#20B8C4] transition">Water Damage
+                Inspection</a></li>
+            <li><a href="pages/diagnostics.html" class="hover:text-[#20B8C4] transition">Phone Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Accessories & Store Placeholders -->
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="font-heading font-bold text-sm uppercase tracking-wider text-white">Accessories &amp; Contact</h3>
+          <ul class="space-y-2 text-sm text-[#BAC6CF]">
+            <li><a href="pages/accessories.html" class="hover:text-[#20B8C4] transition">Full Accessories Catalogue</a>
+            </li>
+            <li><a href="pages/accessories-categories.html" class="hover:text-[#20B8C4] transition">Browse by
+                Category</a></li>
+            <li><a href="pages/repair-request.html" class="text-[#20B8C4] font-semibold hover:underline">Submit a Repair
+                Request &rarr;</a></li>
+          </ul>
+          <div class="bg-[#202833] border border-[#354652] rounded-xl p-4 space-y-2 text-xs text-[#BAC6CF]">
+            <p class="font-mono-tech text-[11px] text-[#20B8C4] uppercase font-bold">Store Details (Placeholders)</p>
+            <p><strong class="text-white">Address:</strong> [Configure Store Street &amp; Suite Placeholder]</p>
+            <p><strong class="text-white">Phone:</strong> [Configure Shop Phone Number]</p>
+            <p><strong class="text-white">Email:</strong> [Configure Shop Contact Email]</p>
+            <p><strong class="text-white">Hours:</strong> [Configure Opening Hours Placeholder]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright & Legal Links -->
+      <div
+        class="mt-12 pt-8 border-t border-[#354652] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94A3AE]">
+        <p>&copy; 2026 FIXORA Mobile Phone Repair &amp; Accessories Shop. All rights reserved.</p>
+        <div class="flex flex-wrap items-center gap-5">
+          <a href="pages/privacy-policy.html" class="hover:text-[#20B8C4] transition">Privacy Policy</a>
+          <a href="pages/terms.html" class="hover:text-[#20B8C4] transition">Terms &amp; Conditions</a>
+          <a href="pages/coming-soon.html" class="hover:text-[#20B8C4] transition">Coming Soon</a>
+          <a href="pages/404.html" class="hover:text-[#20B8C4] transition">404 Page</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Modular Vanilla JS -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/direction.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/services.js"></script>
+  <script src="assets/js/accessories.js"></script>
+  <script src="assets/js/pricing.js"></script>
+  <script src="assets/js/booking.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
